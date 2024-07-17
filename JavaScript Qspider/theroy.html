@@ -1,0 +1,268 @@
+two ways to write javascript
+1 internal javascript : WHEN WE WRITE INSIDE THE HTML CODE THEN WE SAY AS INTERNAL WAY. WE HAVE TO WRITE javascript CODE  
+AT THE BODY TAG . for connect the javascript file , use <script src=""></script> to link it
+2 external javascript (create a spearte file)
+
+THE SEQUENCE OF EXECITE THE javascript
+1 HTML , 2 CSS 3 javascript
+Token:- smallest unit of programming lang.
+keyword :- in javascript we have 60+ keyword , ex:- if , for , while , null, switch
+  Literals:- in javascriptwe have two types 
+  primitive , non primitive
+  number
+  string
+  boolean
+  null 
+  undefine
+  symbol
+  big int
+  
+datatype:- datatype use to specified which type of data to be stored
+separters:-  separters are use to spearate the statements
+operators :- operators are use to perform the specific operation on operands.
+variable:- it is just a block of memory, to declare a variable 
+ let
+ var
+ const
+ let a //declare
+  a = 10 //initialiation
+
+ (ES14) current version of javascript BUT the first stable version is ES-6 and ES-6 is most stable version of javascript
+ before ES-6 we have only var but it does not provide security so in ES-14 they introduced let and const.
+
+1. declartion:-in const varible only declartion is not possible,and initialiation and declartion is possible in same line, 
+2. initialiation:- for var keyword declartion and initialiation is possible, for const not possible
+3. reintialiation is possible in var, let, but const for not possible
+4. redeclartion :- possible for var, but not possiblefor let and const
+
+ SCOP
+
+ HOSTING:-
+  hoisting :- accessing the variable before its declartion is called hoisting. 
+-> hosting is javascript default behaviour of moving all declartion to the top of the current scope
+   (to top of the currentscript or the current function)
+-> if you get undefine its mean the var varible declartion is possible
+   default value for variable is undefined.
+
+   let varible hoisting is not possible
+
+inside script scope , we have TDZ(Temporal dead zone ) its the phase b/w variable declartion ,initialiation
+whenever we declared any varible then it will goes to TDZ ,when it comes out then we have to initialiation any var is present in tdz for that variable before initialiation.
+because of tdz the hoisting is not possible in let and const.
+
+DATATYPES IN javascript
+PRIMITIVE DATATYPES
+string
+number
+bigint :- it is large interger number, the value larger than 2 isto 53 (2^53) is bigint 
+boolean
+undefine
+null
+symbol:- It is use to get unique results. ex:- 
+
+non primitive
+function
+object 
+array
+
+TYPEOF:-
+to check oprator use typeof                                                                                                                                              
+bigint
+
+OUTPUT METHOD IN JAVASCRIPT 
+1. console.log() : cosole is the object present inside window object (global object) , window have big object .
+we write console.log then it will visible on console panel.
+
+2. document.write() : document is also object  present in window object
+document.write will print the output on UI(user interface) and visible on webpage(UI)
+it will not give the space at any of the statements
+
+3. document.writeln() : it will give space at the end of the statements 
+it will give the space of one char.
+
+
+POPUP METHOD
+1. alert():- console.log(window)
+            window.alert("this is just a message")
+-> alert is window object so without window also we can write alert 
+-> it is a popup method ,it is use to show alert messages on webpage.
+-> the alert method will not return any data
+to store the data of alert msg we will take a variable , let a=alert("this is just a message")
+
+2. prompt():- it is a popup method , the prompt method is use to take some data from user
+-> when it will take data and you cancle it , then it will give NULL output.
+-> the retrun type of prompt method is string.
+
+3. confirm() :- it is a popup method, it is use to show some confirm popup, it will give two option (OK, CANCLE)
+-> the return typeof confirm method is boolean
+
+TYPECASTING   
+it is use to convert from one data type to another 
+its types:-
+1. implicite typecasting:- it is done by the javascript engine
+
+there are 6 falsey valuse
+" " empty space
+false
+null 
+undefined
+NaN
+
+2. explicit typecasting:-  the typecasting which is done by the progrmmer. we can achieve explicit by using constructue.
+
+OPERATORS IN JAVASCRIPT
+-> predefine symbols used to perform particular task
+type of operators
+1. Arithmetic operators :  + - * / % ++ --
+2. Assignment operators : += -=  *= /= %=
+3. Comparison operators : > ,<, != >= <= == === 
+4. Logical operators : && ||, when  both the condition are satisfied then it will give true &&. if any conditin is satisfied the will give true ||.
+ 
+5. Ternary operators: (condition) ? true stmt: false stmt;
+there are 3 types of 
+unary operator : the operators will take only one value at a time , then 
+binary : the operator which will take two value at a time then it called binary operator
+Ternary operator: the operator which will take three value at a time then it knowns as ternary operator
+
+== it check only values and === it check values as well as datatypes
+nulish operators :- if the left side  value is null then it will assign RHS right hand side value
+let a = 5; 
+console.log(a || 10); if some value is there then it will take that assign values
+
+condition stmnt are used to perform different action based on different conditions
+1. if: when one condition is true
+2. if else: when we have multiple condition is there, we have to pass condition
+3. else if ladder: when one condition is there , we have to pass condition
+4. switch: when we want to execute the code in multiple times, in switch case we can pass exp. but we can not pass condition, 
+but in case: we can pass exp. and condition
+
+LOOPS in js
+Loop: loop can execute a block of code a number of times
+
+while loop : while loop frist check the condition then execute the block of loop code
+while(condition){
+   //statements
+}
+
+do while : do while loop it will firstly check the block of loop code then execute the condition
+do{
+   //statements
+}
+while();
+
+for loop : for (let a = 10; a>=10, a++){
+   //statements
+}
+
+Advance FOR loops in javascript: FOR OF, FOR IN
+
+FUNCTIONS
+A javascript function is a block of code designed a perform a perticular task,
+A javascript function is executed when "somthing" invoke it (Calls it)
+with functio you can use again and again , we can write code tha same code with differentargunment, to produce differnr results.
+syntax:- 
+   function myFunction(p1, p2){ declared the function
+      //stmt
+      return p1* p2;
+   }
+   FunName(10,20);  // calling the function
+
+   to execute the code we have to call the function
+while calling function we pass argument and we can pass multiple values (10,20,30)
+which declaration we pass parametre (a,b,c), same no of variable as argument in parametre no need to use keyword(let,const)
+parametre name can be anything (first argument - first parametre)
+   no need to use keywords because , we pass parameters with function
+   undefineis default valu of variable, it show when we not initialiationany value with the vavariable
+
+THERE ARE 9 TYPES OF FUNCTION OF JAVASCRIPT
+
+FUNCTION:- A function is a block of code designed to perform a particular task.
+And it6 will executed when "something" invokes it (calls it).
+
+1. Anonymous function :-A function without name, to store the Afun we can store that function in variable and
+call the function by there variable name, we cannot call the function by its name.
+syntax:-
+   let a = function (){
+   }
+   a();
+
+2. Named function:-The function with some name.
+syntax:- 
+   let a = funtion fun(a,b,c){
+   }
+   fun(a); or fun(a,b,c)
+
+3. Function with expression:-To storing any function in one variable this know as function with expression
+another name of funtion with expression name is funtional expression / first class function
+syntax:- 
+   let a = funtion(a,b,c){
+   }
+
+4. Nested Function:- A function inside another function. there are two ways to call function 
+1. calling child function inside parent function
+2. function currying
+
+function parent(){
+   let a = 10;
+   
+   function child() //Nested function
+   {
+      let b = 20;
+   }
+   child(); // calling child function inside parent function
+}
+parent(); // calling parent function
+
+
+5. Immediately invoked function expression:-  Invoking the funtion immediately after it declaration. but you cant call the fun here.
+it will just call only one times.
+syntax:- 
+   (funtion fun(){
+      console.log("hello world"); //declaration 
+   }()) //invoke to remove this error we wrap the whole code in parenthesis. ex:- cookies, login only one time.
+6. Arrow function
+7. Higer order function
+8. Callback Function
+9. Generator function
+
+js engine: parser will pars this part it will split the code small-small chunks. it will pass it to jit compiler,
+jit complier will take the small chunks and  convert that chunks to byte code. 
+interpreter will compile it line by line.
+PROCESSOR:- processor will process that byte code and it will give some output/final result.
+
+AST:-AST it will create heirarchy tree sturcture of our html file.
+it will hold our complete structure in tree format(only html file) .in this each element is knows as node
+in call stack code execution is done
+in heap area all the object is stored
+
+EXECUTION OF THIS CODE
+when we pass our file in JS engine , GEC (global execution context) is created only one time inside call stack.
+In GEC(anonymous)we have two phase:- declaration and execution (initialization comes under execution)phase 
+whenever any function comes into execution then one execution context is created.
+once the execution of function is completion then execution part will removed from call stack.
+call stack is following LIFO principle. 
+
+
+/////////////////////////////
+LEXICAL SCOPING:- 
+Lexical scoping:- it is accessing the variable  from its outer scope. 
+
+In fun curing only exe context will be there at a time
+when child comes in exe that time parent fun is also here
+In function curring , the data is coming from closure object
+
+CLOSURE OBJECT:-
+It is an object which holds the data which is requird to child finction
+closure object will get created whenever child function will accessing parent data, does not matter parent function
+present inside child function or not.
+
+* whenever any function is declared parent function is present inside that in 1st case of nested function 
+(we can access the data of parent function in child function with the help of lexical scoping) 
+* but in 2nd case when any function is declared, no parent class is present in exe phase so every child function is 
+called in that only.(but in this case parent function is not present in call stack 
+so how can we get the data? so that data is coming from closure object)
+ 
+* in both cases closure object is created but in 1st case it will access the data with lexical scoping.
+ but in second case lexical scoping is not there.
+* if in parent we have 3 variable but in child function we are accessing 2 variable of parent function so only that 
+two variable is stored in closure object.
