@@ -3,6 +3,21 @@ two ways to write javascript
 AT THE BODY TAG . for connect the javascript file , use <script src=""></script> to link it
 2 external javascript (create a spearte file)
 
+ADVANTAGES OF JAVASCRIPT
+1- easy to learn and implement.
+2- reduces server load.
+3- Efficient performance
+4- regular updates
+5- plateform independent
+6- it has more frameworks and libraries.
+
+DISADVANTAGES OF JAVASCRIPT
+1- Security Issues
+2-Browser Compatibility
+3-Client-Side Execution
+4-Lack of Debugging Facilities
+5-Single-Threaded Nature
+
 THE SEQUENCE OF EXECITE THE javascript
 1 HTML , 2 CSS 3 javascript
 Token:- smallest unit of programming lang.
@@ -21,11 +36,11 @@ datatype:- datatype use to specified which type of data to be stored
 separters:-  separters are use to spearate the statements
 operators :- operators are use to perform the specific operation on operands.
 variable:- it is just a block of memory, to declare a variable 
- let
- var
- const
- let a //declare
-  a = 10 //initialiation
+let
+var
+const
+let a //declare
+a = 10 //initialiation
 
  (ES14) current version of javascript BUT the first stable version is ES-6 and ES-6 is most stable version of javascript
  before ES-6 we have only var but it does not provide security so in ES-14 they introduced let and const.
@@ -33,28 +48,29 @@ variable:- it is just a block of memory, to declare a variable
 1. declartion:-in const varible only declartion is not possible,and initialiation and declartion is possible in same line, 
 2. initialiation:- for var keyword declartion and initialiation is possible, for const not possible
 3. reintialiation is possible in var, let, but const for not possible
-4. redeclartion :- possible for var, but not possiblefor let and const
+4. redeclartion :- possible for var, but not possible for let and const
 
  SCOP
 
  HOSTING:-
   hoisting :- accessing the variable before its declartion is called hoisting. 
 -> hosting is javascript default behaviour of moving all declartion to the top of the current scope
-   (to top of the currentscript or the current function)
+   (to top of the current  script or the current function)
 -> if you get undefine its mean the var varible declartion is possible
    default value for variable is undefined.
 
    let varible hoisting is not possible
 
-inside script scope , we have TDZ(Temporal dead zone ) its the phase b/w variable declartion ,initialiation
-whenever we declared any varible then it will goes to TDZ ,when it comes out then we have to initialiation any var is present in tdz for that variable before initialiation.
+inside script scope , we have TDZ(Temporal dead zone ) its the phase b/w variable, declartion ,initialiation
+whenever we declared any varible then it will goes to TDZ,so far that variable default value will not be initialiation. 
+when it comes out then we have to initialiation any var is present in tdz for that variable before initialiation.
 because of tdz the hoisting is not possible in let and const.
 
 DATATYPES IN javascript
 PRIMITIVE DATATYPES
 string
 number
-bigint :- it is large interger number, the value larger than 2 isto 53 (2^53) is bigint 
+bigint :- it is large interger number, the value larger than 2 is to 53 (2^53) is bigint 
 boolean
 undefine
 null
@@ -84,22 +100,22 @@ it will give the space of one char.
 POPUP METHOD
 1. alert():- console.log(window)
             window.alert("this is just a message")
+-> it is a popup method ,it is use to show alert messages on webpage.            
 -> alert is window object so without window also we can write alert 
--> it is a popup method ,it is use to show alert messages on webpage.
 -> the alert method will not return any data
-to store the data of alert msg we will take a variable , let a=alert("this is just a message")
+-> to store the data of alert msg we will take a variable , let a=alert("this is just a message")
 
 2. prompt():- it is a popup method , the prompt method is use to take some data from user
 -> when it will take data and you cancle it , then it will give NULL output.
 -> the retrun type of prompt method is string.
 
 3. confirm() :- it is a popup method, it is use to show some confirm popup, it will give two option (OK, CANCLE)
--> the return typeof confirm method is boolean
+-> the return type of confirm method is boolean
 
 TYPECASTING   
 it is use to convert from one data type to another 
-its types:-
-1. implicite typecasting:- it is done by the javascript engine
+its types:-                                         
+1. implicite typecasting:- it is done by the javascript engine              
 
 there are 6 falsey valuse
 " " empty space
@@ -116,8 +132,8 @@ type of operators
 1. Arithmetic operators :  + - * / % ++ --
 2. Assignment operators : += -=  *= /= %=
 3. Comparison operators : > ,<, != >= <= == === 
-4. Logical operators : && ||, when  both the condition are satisfied then it will give true &&. if any conditin is satisfied the will give true ||.
- 
+4. Logical operators : && ||, when  both the condition are satisfied then it will give true &&. 
+if any conditin is satisfied the will give true ||.
 5. Ternary operators: (condition) ? true stmt: false stmt;
 there are 3 types of 
 unary operator : the operators will take only one value at a time , then 
@@ -154,32 +170,32 @@ for loop : for (let a = 10; a>=10, a++){
    //statements
 }
 
-Advance FOR loops in javascript: FOR OF, FOR IN
+There are two Advanced FOR loops in javascript: FOR OF, FOR IN
 
 FUNCTIONS
 A javascript function is a block of code designed a perform a perticular task,
 A javascript function is executed when "somthing" invoke it (Calls it)
-with functio you can use again and again , we can write code tha same code with differentargunment, to produce differnr results.
+we can write code with different argunment, to produce different results.
 syntax:- 
-   function myFunction(p1, p2){ declared the function
+   function myFunction(p1, p2){ //declared the function
       //stmt
       return p1* p2;
    }
    FunName(10,20);  // calling the function
 
-   to execute the code we have to call the function
+to execute the code we have to call the function
 while calling function we pass argument and we can pass multiple values (10,20,30)
 which declaration we pass parametre (a,b,c), same no of variable as argument in parametre no need to use keyword(let,const)
 parametre name can be anything (first argument - first parametre)
-   no need to use keywords because , we pass parameters with function
-   undefineis default valu of variable, it show when we not initialiationany value with the vavariable
+no need to use keywords because , we pass parameters with function
+undefined default value of variable, it show when we not initialize any value with the variable
 
 THERE ARE 9 TYPES OF FUNCTION OF JAVASCRIPT
 
 FUNCTION:- A function is a block of code designed to perform a particular task.
-And it6 will executed when "something" invokes it (calls it).
+And its will executed when "something" invokes it (calls it).
 
-1. Anonymous function :-A function without name, to store the Afun we can store that function in variable and
+1. Anonymous function :-A function without name, to store the a fun we can store that function in variable and
 call the function by there variable name, we cannot call the function by its name.
 syntax:-
    let a = function (){
@@ -198,7 +214,16 @@ syntax:-
    let a = funtion(a,b,c){
    }
 
-4. Nested Function:- A function inside another function. there are two ways to call function 
+5. Immediately invoked function expression:-Invoking the funtion immediately after it declaration. but you cant call the fun here.
+it will just call only one times.
+syntax:- 
+      (funtion fun(){
+         console.log("hello world"); //declaration 
+      }()) //invoke to remove this error we wrap the whole code in parenthesis. ex:- cookies, login only one time.
+      
+      
+4. Nested Function:- A function inside another function. 
+there are two ways to call function 
 1. calling child function inside parent function
 2. function currying
 
@@ -208,25 +233,15 @@ function parent(){
    function child() //Nested function
    {
       let b = 20;
+      console.log(a,b);
    }
    child(); // calling child function inside parent function
 }
 parent(); // calling parent function
 
-
-5. Immediately invoked function expression:-  Invoking the funtion immediately after it declaration. but you cant call the fun here.
-it will just call only one times.
-syntax:- 
-   (funtion fun(){
-      console.log("hello world"); //declaration 
-   }()) //invoke to remove this error we wrap the whole code in parenthesis. ex:- cookies, login only one time.
-6. Arrow function
-7. Higer order function
-8. Callback Function
-9. Generator function
-
 js engine: parser will pars this part it will split the code small-small chunks. it will pass it to jit compiler,
 jit complier will take the small chunks and  convert that chunks to byte code. 
+
 interpreter will compile it line by line.
 PROCESSOR:- processor will process that byte code and it will give some output/final result.
 
@@ -242,7 +257,6 @@ whenever any function comes into execution then one execution context is created
 once the execution of function is completion then execution part will removed from call stack.
 call stack is following LIFO principle. 
 
-
 /////////////////////////////
 LEXICAL SCOPING:- 
 Lexical scoping:- it is accessing the variable  from its outer scope. 
@@ -252,11 +266,11 @@ when child comes in exe that time parent fun is also here
 In function curring , the data is coming from closure object
 
 CLOSURE OBJECT:-
-It is an object which holds the data which is requird to child finction
+It is an object which holds the data which is requird to child function.
 closure object will get created whenever child function will accessing parent data, does not matter parent function
 present inside child function or not.
 
-* whenever any function is declared parent function is present inside that in 1st case of nested function 
+* whenever any function is declared parent function is present inside that fun in 1st case of nested function 
 (we can access the data of parent function in child function with the help of lexical scoping) 
 * but in 2nd case when any function is declared, no parent class is present in exe phase so every child function is 
 called in that only.(but in this case parent function is not present in call stack 
@@ -266,3 +280,485 @@ so how can we get the data? so that data is coming from closure object)
  but in second case lexical scoping is not there.
 * if in parent we have 3 variable but in child function we are accessing 2 variable of parent function so only that 
 two variable is stored in closure object.
+
+6. Arrow function:- it is short hand to declare a function () => {}
+syntax-  ()=>{}  that arrow is called fat arrow. to call this function assign this function to variable and with 
+the help of variable we can call.
+
+ let a = () => {  //arrow function
+       console.log("hello");
+    };
+
+    a();
+
+    * arrow function different from other function bcz of 
+1-short hand
+2-implicit  is possible
+3-in arrow function binding is not possible rest all function it is possible
+bcz this keyword refere every time to the window object , but in case of other fun this keyword to the current object
+
+7. Higer order function:- 
+function hoc(a){
+     console.log(a);
+   }
+   
+   function head(){
+   console.log("hello")     
+ }
+hoc(head)   //a function which is accepting another function as an argument that function is called higher order function
+(here head is a function and hoc is also a function) hoc(higher order function)
+
+8. Callback Function:- 
+a function which is passed to another function as an argument that function is called as call back function head(call back function)
+
+  function fun(){
+        console.log(this) //inside a function this keyword will refer to window object
+    }
+     fun();
+   
+   
+internally a class is created for every function, (every function is a JS class)
+to overcome this ... (like when we write this.a it gives 3... so to overcome this, fix the error and it will create constructor)
+   
+    let a = function (){
+       console.log(this);
+    };
+    a(); anonymousfunction
+
+   
+ //whenever we are fetching data from backend it will come in the form of array of objects
+
+let emp1={
+   empName:"tinku",
+   empId:10,
+   salary:20000,
+   age:30,
+};
+let emp2={
+   empName:"tinki",
+   empId:20,
+   salary:30000,
+   age:25,
+};
+let emp3={
+   empName:"pinku",
+   empId:30,
+   salary:50000,
+   age:27,
+};
+let emp4={
+   empName:"dinki",
+   empId:40,
+   salary:60000,
+   age:23,
+
+};
+
+function printData(a,b,c){
+   console.log(this.empName)
+   console.log(this.empId)
+   console.log(this.salary)
+   console.log(this.age)
+}
+
+THIS keyword in function:-
+inside a function this keyword will refer to window object
+
+binding is a process of refering this keyword to a particular object
+how to perform binding - {function_name.call method(object name , extra arguments)}
+to perform binding we have three method
+call(after calling it binds the data) , apply , bind 
+pass parametre in declaration and we have to pass argument in calling function
+to immediatly execute function use call and apply and to execute that function lately we use bind
+printData.call(emp1)
+printData.call(emp1,10,20,30);//in call method first one is object and remaining are arguments(syntx(object,extra argument)).
+printData.call(emp2)
+
+console.log(printData.apply(emp2,[10,20,30]));//in apply, to pass extra argument we need to wrap that argument  in array[]
+ otherwise it will give error.
+call and apply method will not return anything
+bind will return method bound function 
+
+console.log(printData.bind(emp3)()); //(we can pass extra argument) 
+in bind method it will return function so to call bind function write ()in the end 
+
+9. Generator function:- 
+Generator function will create different different generator object (when it gets called)
+--we have yield keyword is creating that object which we are getting (only expression we can pass)
+--we use function keyword with *
+--there is no return keyword 
+
+function* generator(ac) {
+       yield ac+10;
+       yield ac+20;
+       yield ac+30;
+       yield ac+40;                                   
+}
+
+let ab = generator(10); // store calling function in one variable
+console.log(ab);
+console.log(ab.next().value);
+console.log(ab);
+console.log(ab.next().value);
+console.log(ab);
+console.log(ab.next().value);
+console.log(ab); 
+
+*homogenous - same type of data(in array we can store array type of data)
+
+   There are two types of return statement 
+   1-implicit 
+   2-explicit
+   
+   * implicit - without using return keyword, if our function is returning anything
+   let fun = (a,b) => a+b;
+   console.log(fun(20,30));
+   RULES:-
+   1- we should not use function body
+   2- no need to use return keyword
+   3- we should have only one statement in function
+   
+   to execute multiple statement use ()
+   let fun = (a,b) => (clg(a,b), a+b);
+   clg(fun(20,30));
+   
+   *implicit return is only possible with arrow function (with rest all function it is not possible)
+   
+   * explicit - return keyword is present
+   
+      
+////////////////////////////////////////////////////////
+   ARRAY:-
+   * it is a continious block of memory
+   * in  JS array is heterogenoues in nature (different types of data we can store)
+   
+   let arr = [10, "mantasha", true, function name (add) {}, {}, [] ];
+   
+   * in JS we can create array in 2 ways 
+   1- by array literals:-
+    syntax = let arr=[10,"hello",60];
+
+   2- by using array constructor(using new keyword)
+   work of new keyword is to create the object
+   syntax:-
+   let arr = new array();
+   let arr = new array(10,40,30);
+   console.log(arr); // it will give []
+   --if we pass any number then it return size of an array {ex = 10 value creating one array of length 10 and 10 empty element}
+   --if we pass string, boolean it will return array element 
+   --if we pass multiple values it will consider as array element
+   
+   * if we pass value other than no it will consider it as array element
+
+   
+ NOTE:- * hoisting is possible in two ways:-
+ ---variable hoisting
+ ---function hoisting- (only in named function, function hoisting is possible)
+ 
+ * function hoisting is not possible in those function where we have declare that function in some variable 
+
+///////////////////////////////////////////
+ ARRAY METHOD
+ 
+ array we can add element because the length is not fixed(we can insert valuse after it is executed also)
+ to insert the array we have two method push and Unshift
+ 1. push method :- it will insert the element of an array at the end
+ length properties it find the length of an array.
+
+ 3. Unshift:- it will insert the element of an array at the last.
+
+ 4.pop():- it will remove
+ indexof method will accept an array element and it return the index value of first occurence.
+ lastIndexxOf :- it will return the index value of alst occurence
+
+ 4. includes () method
+ 5. join () :- it is used to convert into string
+
+ ////////////////////////////////////////////////////////
+ ADVANCE ARRAY METHODS
+ ForEach()
+ map()
+ Filter()
+ Find()
+ Reduce()
+
+ //////////////////////////////////////////////////////////////
+ Object:-object is nothing but the thing which has existence in the world, it has state and behaviour(properties & methods)
+ (datatype, primitive, non primitive all are object)
+
+ 2ways to create object are:-
+ 1. literals
+ 2. by using object constructor(new keyword)
+ 
+ 3. by using object constructor without new keyword
+
+ ////////////////////////////////////////////
+
+ ///OBJECT MRTHODS///
+1. keys: - it will return array of keys
+2. values: return array of values
+3. entries: array keys and values
+4. assign:- it is used to merge two object
+5. seal:- we can only update the properties
+6. isSealed:- it is used to check whether the particular object is sealed or not
+7. freeze:- we cannot do any modifications in an object
+8. isFrozen:- it is used to check  whether the particular object is frozen or not
+9. hasOwnProperty:- it is used to check  whether the particular property is present in an object or not.
+
+we have array constructur like Array , number
+
+///////////////STRING////////////////
+ String is collection of characters , it can be one char. or more than one char.
+
+ 3ways to declered string
+1. single quotes
+2. double quotes
+3. backtick
+
+//STRING METHODS//
+1.String length
+2. String slice
+3. String sunString
+4. String sunStr
+5. String replace
+5. String replaceAll
+6. String toUpperCase 
+7. String toLowerCase
+8. String concat
+9. String trim
+10. String trimStart
+11. String trimEnd
+12. String padStart
+13. String padEnd
+14. String charAt
+15. String charCodeAt
+16. String split
+
+17. fromcahrCodeAt
+
+ADVANCE FOR LOOPS
+1. FOR OF:- it will return elements, declartion & variable and pass an array
+for (const x of arr) { 
+   console.log(x);
+   
+}
+2. FOR IN : it will return index
+for (const x in arr) { 
+   console.log(x);
+   
+}
+            FOR OF              FOR IN 
+ARRAY        TICK                TICK(working)
+
+STRING       TICK                TICK
+
+OBJECT   X(not working)          TICK
+
+///////////DOM(document object model)/////////////////////
+IT IS THE WEB API, by using dom we can modify the html element without refresing the page .
+it allow to modify the document content rendered by the browser without refresing the page.
+therefore , dom help to make a web page dynamic.
+we can modify html , CSS
+DOM is not a part of javascript
+
+in browser only , windowo bject is create only for browser, in nodejs only for browser object
+
+document:- it is an object(window objext),it will hold our code in tree format and it is root node of dom tree
+this document will hold our complete html code in tree format like AST,
+
+to target any element in html in dom we have 5 method
+
+1. document.getElementById()
+2. document.getElementsByClassName()
+3. document.getElementsByTagName()
+4. document.getElementByQuerySelector()
+5. document.getElementByQuerySelectorAll()
+  
+//difference b/w nodelist & html collection 
+NodeList: Can contain any type of nodes, including element nodes, text nodes, and more.        
+NodeList: Can be either live or static. A live NodeList updates automatically if the document changes,
+while a static NodeList does not.                                                                                
+NodeList: Has forEach method to iterate over the elements.   
+
+HTMLCollection: Only contains element nodes.                                                                                        
+HTMLCollection: Always live, meaning it updates automatically when the document changes.    
+HTMLCollection: Does not have forEach method, but can be converted to an array to use array methods.
+//take all heading tag change there color, 
+
+/////////////DOM TRAVERSING////////////////
+BY USING DOM TRAVERSING WE CAN PERFORM CRUD OPERATION ON ELEMENT
+
+METHODS
+1. createElement()
+2. append()
+3. appenchild()
+4. remove()
+5. setAttribute()
+
+PROPERTIES
+1. innerHTML
+2. innerText
+
+
+//EVENTS IN DOM//
+EVENTS:- Every action perform by the user on webpage. ex: scroll, clicking
+A js can be executed when an event occurs , like when a user click on a html elements.
+
+click, mouseover, mouseout, mousedown, mouseup , contaxmenu(rightmenu), doubleclick(ondblClick), keypress, keyup, keydown, submit,
+
+there are 2 ways to use DOM EVENTS
+1. by using HTML Attributes
+2. by using addEventListener(): it will accept 2 argunment(event name, call back fun)
+
+EVENT PROPAGATION:- how our events are traveling through dom tree
+we have 2 phase
+1. capturing phase:- event traveling through outer to inner phase
+2. bubbling phase:- event traveling through  inner to outer phase
+
+default phase of event propagation is bubblimg phase
+to stop event propagation we have mehtods, stop prp. we have to pass same parameter in the all the box code like this 
+section.addEventListener("click", (e)=>{
+   e.stopPropagation()
+  section.style.backgroundColor = "red";
+});
+
+////JSON (java Script Object Notation)////
+json is lightweight and it is a format to storing and transporting data, it is used when the data is send from serever 
+to webpage.  
+sever know only json fromat, on the time of access the data or getback the data
+in json format the key and vaue both are in "" double quotes
+
+whenever we transfer the date into backend we convert the code in json bcz backend understand only json format
+Js know js format, so 1st we need to convet js formt into json format then it access. for conversion in javascript 
+we have JSON OBJECT
+
+json we have 2 method
+
+1. stringify:- use to convert js into json
+2. parse:- use to convet json into js
+
+DESTRUCTURING:-
+it is the method use to extract the data form array and object. we can store the data into a variable 
+
+TWO TYPES OF distructring
+1. Array DESTRUCTURING : in array distructring we can't skip array element,
+it is use when we know the array
+in array destructuring any varible name we can pass (adv)
+
+1. EXtrract :- to perform this distructring we have 
+* spread oprator:- it is is used to unpacked element 
+* Rest parameter:- rest parameter is used to packaging the remainig items
+
+2. object DESTRUCTURING: -BY destructring object we use key name, we can't use random variable name in curly braces{}
+  * rest parameter is not use in object destructring 
+  it use spread operator
+
+////BROWSER STORAGE///
+local storage - (will store the data permanent. storage after closing also it will get storage (for authentication and authorization))
+authenctication:- when your data will not store into the website then you access the data
+athoriazTION:- WHEN you are a part of 
+session storage - (it will hold the data until the session is running)
+
+to store or manipulate the data we have object called local storage :-
+
+* local and session storage has some method inside it
+to store the data (setitem (two parameter(keyname , what u want to store(value))))
+to fetch the data (getitem (one parametre(keyname)))
+
+remove() , clear()
+
+
+////MATH object////
+it is used to perform mathematical operation
+
+method list 
+1. math.sqrt
+2. math.floor
+3. math.ceil
+4. math.max
+5. math.min
+
+
+///ASYNCHRONOUS/// whenever we are performing multipletask at a time 
+when 2 or more multiple task will execute a time .
+
+1. CALL back: it is used to make js ASYNCHRONOUS. 
+in call back we have 2 mathod
+  1. setTimeout()
+  2. setInterval()
+  3. removeItem()
+  4. clear()
+
+2. PROMISES: it is a machanism to handle asynchrounus operation
+whenever we are fetching data from backend , we get one promise, (to fetch data it will take time but we can't stop 
+remaining execution , so to handle the situation we have promises)
+
+in PROMISES we have 3 states:-
+1. pending state: when no any action perform on browser, then on that time promise is in pending
+2. resolve state: give output in fulfil it means resolve. (if you getting output that you want, then it resolved)
+3. reject state: it will show in the output rejected, when promise is rejected that time it show error
+
+whenever we are fetcing data from backend , we get promise so 
+1- if data is available - resolve
+2- data is not there - reject
+3-  when you have data but it is v big and it will take some time - pending
+
+promise constructor will accept one parameter. call back fun 
+call back function will accept 2 parametre(we can take any parameter,but first parameter is for resolve)
+ 
+//how to handle the promise//
+to handel promise we have 3 methods
+1. then():whenever promise is resolve on that time we will use then
+2. catch(): when the promise get rejected then we use catch()         
+3. finally()
+
+there are 4 promise method
+1. any:- (if any  promises should be resolved then use any)
+2. all:- (all promises should be resolved then use all)
+3. allsettled(mean, resolved, reject) :- (to check whether promises are settled or not (all action are performed or not 
+like resolved or rejected))
+4. race:- (suppose we have multiple promise then which promise will execute first then we create use race) (to perform
+ action method then you have to use setimeout,PROMISES).
+3. Async & await
+
+HOW TO FETCH DATA IN backend
+WE HAVE 2 METHODS 
+1. FETCH - to fetch data from backend we have 2 methods
+* by using promise
+*  Async & await                                       
+
+/////MODULES///////
+
+It is used to share the code in  multiple files 
+for sharing the file use export
+and where u r sharing that file use import
+
+by using module we can share the code in multiple files , and in html we have to specify the type of file like type=module 
+
+whenever any file we are exporting that time the file is module file.
+
+when any file we import to another file that time the file called as module.
+
+there are 2 types of export statements
+1. Named export
+2. Default export
+
+1. Named Export:
+- In named export while exporting any statement we will use export keyword
+- In named export while importing we have to use curly braces
+- while importing we should use same name
+- in a single file we can use multiple named export statement
+
+2. Default export:
+- in default export we have to use export & default keyword
+- in sinlge file we cannot use multiple default statement
+- no need of curly braces 
+- we can use any name
+
+
+
+
+
+
+
+
